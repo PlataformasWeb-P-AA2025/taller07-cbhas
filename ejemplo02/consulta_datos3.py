@@ -4,7 +4,7 @@ from sqlalchemy import and_ # se importa el operador and
 
 # se importa la clase(s) del 
 # archivo genera_tablas
-from genera_tablas import Club, Jugador
+from genera_tablas import Club
 
 # se importa información del archivo configuracion
 from configuracion import cadena_base_datos

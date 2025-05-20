@@ -31,7 +31,7 @@ for s in jugadores:
     # jugador
     # se puede acceder al club; como lo definimos
     # al momento de crear la clase Jugador
-    print("El Jugador pertenece a: %s " % (s.club))
+    print("El Jugador pertenece a: %s " % (s.equipo))
     print("---------")
 
 print("Presentación de Jugadores - op2")
@@ -41,7 +41,7 @@ for s in jugadores:
     # jugador
     # se puede acceder al club; como lo definimos
     # al momento de crear la clase Jugador
-    print("El Jugador pertenece a: %s " % (s.club.nombre))
+    print("El Jugador pertenece a: %s " % (s.equipo.nombre))
     print("---------")
 
 
