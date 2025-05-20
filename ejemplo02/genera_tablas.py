@@ -22,14 +22,14 @@ class Club(Base):
 class Jugador(Base):
     __tablename__ = 'jugador'
     id = Column(Integer, primary_key=True)
-    nombre = Column(String)
     posicion = Column(String)
     dorsal = Column(Integer)
+    nombre = Column(String)
     club_id = Column(Integer, ForeignKey('club.id'))
     equipo = relationship("Club", back_populates="jugadores")
     
     def __repr__(self):
-        return "Jugador: %s - posicion %f - dorsal:%d" % (
+        return "Jugador: %s - posicion %s - dorsal: %d" % (
                 self.nombre, self.posicion, self.dorsal)
 
 Base.metadata.create_all(engine)
